@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlio.h>
 
 int* processArray(int *arr, int n, int k, int *maxSum) {
     int *reversed = malloc(n); 
@@ -11,8 +11,8 @@ int* processArray(int *arr, int n, int k, int *maxSum) {
     *maxSum = 0;
     int currentSum = 0;
 
-    for(int i = 0; i < k; i++)
-        currentSum += reversed[i] 
+    for(int i = 0; i < k; i++){
+        currentSum += reversed[i];
 
     *maxSum = currentSum;
 
