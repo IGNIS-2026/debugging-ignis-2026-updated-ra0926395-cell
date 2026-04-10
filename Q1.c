@@ -4,15 +4,15 @@
 int* processArray(int *arr, int n, int k, int *maxSum) {
     int *reversed = malloc(n); 
 
-    for(int i = 0; i <= n; i++) { 
+    for(int i = 1; i <= n; i++) {
         reversed[i] = arr[n - i]; 
     }
 
     *maxSum = 0;
     int currentSum = 0;
 
-    for(int i = 0; i < k; i++)
-        currentSum += reversed[i] 
+    for(int i = 0; i < k; i++){
+        currentSum += reversed[i];
 
     *maxSum = currentSum;
 
